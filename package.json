@@ -17,7 +17,7 @@
   "scripts": {
     "test": "standard && jest --config test/unit/jest.conf.js",
     "test-e2e": "node test/e2e/runner.js",
-    "coverage": "cat ./test/unit/coverage/lcov.info | coveralls && codecov",
+    "coverage": "codecov",
     "docker-build": "docker build . -t import-bier",
     "docker-run": "docker run --env-file .env import-bier"
   },
@@ -30,7 +30,6 @@
   },
   "devDependencies": {
     "codecov": "3.6.1",
-    "coveralls": "3.0.9",
     "dotenv": "8.2.0",
     "jest": "24.9.0",
     "rimraf": "3.0.0",
